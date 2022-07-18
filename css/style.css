@@ -1,0 +1,87 @@
+/*h1 { font-family: "Special Elite"; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: "Special Elite"; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: "Special Elite"; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: "Special Elite"; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: "Special Elite"; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /*
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+    */
+    background: rgb(25,25,25);
+}
+
+p{
+    color: rgba(255,255,255,0.75);
+    font-family: "Special Elite", 'Courier New', Courier, monospace;
+    margin: 0 auto;
+}
+
+.welcome{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.img_perfil {
+    float: left;
+    border-radius: 50%;
+    width: 250px;
+    
+    position: absolute;
+}
+
+.line_text{
+    top: 100px;
+    position: absolute;
+    color: rgba(255,255,255,0.75);
+    font-family: "Special Elite", 'Courier New', Courier, monospace;
+    font-size: 3em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,0.75);
+    /*padding: 3px;*/
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+   /* animation: typeboxright 0.5s infinite normal;
+    animation: bType 4.5s steps(40) 1s infinite normal both;*/
+    max-width: 21em;
+    width: 100%;
+}
+
+.typing-anim{
+    animation: typeboxright 0.5s .5s infinite normal, bType 4.5s steps(40) 1s normal both;
+}
+
+@keyframes bType{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+@keyframes typeboxright{
+    from{
+        border-right: 2px solid rgba(255,255,255,0.75);
+    }
+    to{
+        border-right: transparent;
+    }
+}
+
+.intro {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 18pt;
+    background: rgb(15, 15, 15, 0.5);
+}
